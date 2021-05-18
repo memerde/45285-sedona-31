@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Hieronimus Optional](https://up.htmlacademy.ru/htmlcss/31/user/45285).
-* Наставник: `Неизвестно`.
+* Студент: [Максим Ячин](https://up.htmlacademy.ru/htmlcss/31/user/45285).
+* Наставник: [Artem Ryzhov](https://htmlacademy.ru/profile/id1387905).
 
 ---
 
