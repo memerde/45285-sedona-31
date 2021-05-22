@@ -1,12 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header>
+      <h1>Поиск гостиницы в Седоне</h1>
+      <nav>
+        <a href="#">
+          <img
+            src="img/logo.svg"
+            width="138"
+            height="70"
+            alt="Логотип Седона"
+          />
+        </a>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <img src="img/bg_photo.png" width="1200" height="509" alt="Седона" />
+      <h2>
+        Седона — небольшой городок в Аризоне,<br />заслуживающий большего!
+      </h2>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      <section class="features">
+        <ul>
+          <li>
+            <h3>Настоящий городок</h3>
+            <p>— №1 —</p>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+          <li>
+            <img
+              src="img/feature_town.png"
+              width="800"
+              height="256"
+              alt="Город"
+            />
+          </li>
+          <li>
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+          <li>
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li>
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
+          </li>
+          <li>
+            <img
+              src="img/feature_bridge.png"
+              width="800"
+              height="256"
+              alt="Моста дьявола"
+            />
+          </li>
+          <li>
+            <h3>Там есть Мост дьявола</h3>
+            <p>— №2 —</p>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <p>— №3 —</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <p>— №5 —</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="search">
+        <h3>Заинтересовались?</h3>
+        <p>
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в Седоне
+        </p>
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="date-in">Дата заезда:</label>
+            <input type="text" id="date-in" placeholder="24 апреля 2017" />
+          </p>
 
+          <p>
+            <label for="date-out">Дата выезда:</label>
+            <input type="text" id="date-out" placeholder="4 июля 2017" />
+          </p>
+          <span>Взрослые:</span>
+          <ul>
+            <li>-</li>
+            <li>0</li>
+            <li>+</li>
+          </ul>
+          <span>Дети:</span>
+          <ul>
+            <li>-</li>
+            <li>0</li>
+            <li>+</li>
+          </ul>
+          <button type="submit">Найти</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li class="footer-contacts">
+          <p>#visitsedona</p>
+          <a href="tel:+78005558628">+7 800 555-86-28</a>
+        </li>
+        <li>
+          <ul class="footer-social-list">
+            <li class="social-twitter">
+              <img src="img/twitter.png" width="20" height="15" alt="Twitter" />
+            </li>
+            <li class="social-facebook">
+              <img
+                src="img/fb-icon.png"
+                width="20"
+                height="15"
+                alt="Facebook"
+              />
+            </li>
+            <li class="social-youtube">
+              <img src="img/youtube.png" width="20" height="15" alt="Youtube" />
+            </li>
+          </ul>
+        </li>
+        <li class="footer-developer">
+          Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss"
+            ><img src="img/logo_htmlacademy.png" width="115" alt="HTML Academy"
+          /></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
