@@ -69,7 +69,7 @@ svg {
 }
 
 .site-nav a:active {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 .current-page {
@@ -120,7 +120,6 @@ svg {
 .features-item:nth-child(6) {
   background-color: var(--gray);
 }
-
 
 .features-list,
 .features-sub-list {
@@ -204,6 +203,7 @@ svg {
   border: 0;
 }
 
+.filter-list{margin: 0; padding:0;list-style: 0;}
 .filter-item {
   color: var(--white);
 }
@@ -235,6 +235,8 @@ svg {
   /* display: flex; */
   font-size: 12px;
   margin-right: auto;
+  list-style: none;
+  padding: 0;
 }
 
 .type-item {
@@ -272,6 +274,13 @@ svg {
 .sort-current {
   fill: var(--blue);
 }
+
+.hotel-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .hotel-rating p {
   background-color: var(--gray);
   color: var(--dark-gray);
