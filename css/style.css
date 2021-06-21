@@ -106,25 +106,20 @@ svg {
   list-style: none;
   margin: 0 auto;
   padding: 15px 0 17px;
-  width: 1055px;
+  
   align-items: center;
   flex-wrap: wrap;
 }
 
-.site-item:first-child {
-  margin-right: 135px;
-}
 
-.site-item:nth-child(2) {
-  margin-right: auto;
+.site-item {width:25%;display:block;}
+.site-item:first-child {padding-left: 73px;}
+.site-item:last-child {padding-right: 73px;}
+.site-item:nth-child(-n + 2) {
+  text-align: left; 
 }
-
-.site-item:nth-child(3) {
-  margin-left: auto;
-}
-
-.site-item:last-child {
-  margin-left: 146px;
+ .site-item:nth-last-child(-n+2) {
+  text-align: right; 
 }
 
 .main-nav {
@@ -553,11 +548,15 @@ svg {
   border-radius: 3px;
 }
 
+.filter-item-chk:checked + label::before {
+display:none;
+}
+
 .filter-item-chk:checked + label::after {
-  content: url("/img/chk.svg");
+  content: url("/img/checkbox-on.svg");
   position: absolute;
-  left: -35px;
-  top: 3px;
+  left: -40px;
+  top: 2px;
   width: 20px;
   height: 20px;
 }
@@ -849,14 +848,14 @@ svg {
   justify-content: space-between;
 }
 
-.hotel-rating span {
-  margin-bottom: 35px;
-}
+.hotel-class {margin-bottom:45px;}
 
 .hotel-rating p {
   margin: 0;
   padding: 2px 13px;
   background-color: var(--gray);
+  color: #666666;
+
 }
 
 .btn-container {
@@ -891,31 +890,20 @@ svg {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel-class {
-  display: block;
-  height: 17px;
-  margin-bottom: 45px;
-}
 
 .stars-4 {
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-image: url("/img/star.svg"), url("/img/star.svg"),
-    url("/img/star.svg"), url("/img/star.svg");
-  background-position: 19px top, 45px top, 70px top, 91px top;
+  background-repeat: space no-repeat; width: 87px; min-height: 17px;
+  background-image: url("/img/star.svg"); align-self: flex-end;
 }
 
 .stars-3 {
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-image: url("/img/star.svg"), url("/img/star.svg"),
-    url("/img/star.svg"), url("/img/star.svg");
-  background-position: 45px top, 70px top, 91px top;
+  background-repeat: space no-repeat; width: 65px; min-height: 17px;
+  background-image: url("/img/star.svg"); align-self: flex-end;
 }
 
 .stars-2 {
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-image: url("/img/star.svg"), url("/img/star.svg"),
-    url("/img/star.svg"), url("/img/star.svg");
-  background-position: 70px top, 91px top;
+  background-repeat: space no-repeat; width: 40px; min-height: 17px;
+  background-image: url("/img/star.svg"); align-self: flex-end;
 }
 
 .more-info-btn:hover {
