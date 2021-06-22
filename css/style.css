@@ -909,11 +909,11 @@ svg {
 
 .stars-4::after {
   position: absolute;
-  content: unset;
+  content: "";
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 88px;
+  width: 88px; height:17px;
   background-repeat: space no-repeat;
 }
 
@@ -923,11 +923,11 @@ svg {
 
 .stars-3::after {
   position: absolute;
-  content: url("/img/star.svg");
+  content: "";
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 64px;
+  width: 64px;height:17px;
   background-repeat: space no-repeat;
 }
 
@@ -937,11 +937,11 @@ svg {
 
 .stars-2::after {
   position: absolute;
-  content: url("/img/star.svg");
+  content: "";
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 40px;
+  width: 40px;height:17px;
   background-repeat: space no-repeat;
 }
 
