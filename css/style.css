@@ -106,20 +106,26 @@ svg {
   list-style: none;
   margin: 0 auto;
   padding: 15px 0 17px;
-  
+
   align-items: center;
   flex-wrap: wrap;
 }
 
-
-.site-item {width:25%;display:block;}
-.site-item:first-child {padding-left: 73px;}
-.site-item:last-child {padding-right: 73px;}
-.site-item:nth-child(-n + 2) {
-  text-align: left; 
+.site-item {
+  width: 25%;
+  display: block;
 }
- .site-item:nth-last-child(-n+2) {
-  text-align: right; 
+.site-item:first-child {
+  padding-left: 73px;
+}
+.site-item:last-child {
+  padding-right: 73px;
+}
+.site-item:nth-child(-n + 2) {
+  text-align: left;
+}
+.site-item:nth-last-child(-n + 2) {
+  text-align: right;
 }
 
 .main-nav {
@@ -206,7 +212,6 @@ svg {
   line-height: 21px;
   padding: 0;
   margin: 0 auto 25px;
-  /* width: 149px; */
 }
 
 .features-item p {
@@ -542,14 +547,14 @@ svg {
   position: absolute;
   left: -40px;
   top: 2px;
-  width: 20px;
-  height: 20px;
+  width: 19px;
+  height: 19px;
   border: 2px solid var(--white);
   border-radius: 3px;
 }
 
 .filter-item-chk:checked + label::before {
-display:none;
+  display: none;
 }
 
 .filter-item-chk:checked + label::after {
@@ -580,13 +585,13 @@ display:none;
 
 .form-search-catalog {
   display: flex;
-  padding: 25px 72px 0;
+  padding: 23px 72px 0;
   margin: 0;
 }
 
 .filter-fieldset {
   border: 0;
-  margin: 0 120px 0 0;
+  margin: 0 118px 19px 0;
   padding: 0;
 }
 
@@ -602,15 +607,23 @@ display:none;
   font-size: 16px;
   font-weight: 700;
   border: 0;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+}
+
+.filter-fieldset:last-child .filter-header {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  margin-bottom: 11px;
 }
 
 .filter-container {
   border: 2px solid var(--white);
   display: block;
-  padding: 3px 0 4px 65px;
+  padding: 4px 0 4px 65px;
   border-radius: 2px;
-  width: 317px;
+  width: 318px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -618,7 +631,8 @@ display:none;
 .filter-container::after {
   content: url("/img/Rectangle.svg");
   position: absolute;
-  left: 158px;
+  left: 157px;
+  top: 5px;
 }
 
 .filter-container label {
@@ -679,7 +693,7 @@ display:none;
 }
 
 .range-controls .toggle-max {
-  left: 250px;
+  left: 252px;
 }
 
 .filter-btn {
@@ -688,8 +702,8 @@ display:none;
   border-radius: 2px;
   color: var(--white);
   font-weight: 400;
-  padding: 9px 35px;
-  margin: 0 0 30px 80px;
+  padding: 8px 34px 8px 33px;
+  margin: 0 0 30px 84px;
   display: block;
 }
 
@@ -699,20 +713,21 @@ display:none;
 }
 
 .search-result {
-  padding: 0 73px;
+  padding: 9px 73px 0;
 }
 
 .result-sort h3 {
   font-weight: 700;
   font-size: 21px;
+  line-height: 23px;
   margin-right: 16px;
   width: 190px;
-  padding: 9px 0;
 }
 
 .result-sort {
   display: flex;
   align-items: center;
+  padding-bottom: 10px;
 }
 
 .result-sort p {
@@ -845,17 +860,15 @@ display:none;
   margin: 0 0 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-self: stretch;
 }
 
-.hotel-class {margin-bottom:45px;}
-
 .hotel-rating p {
-  margin: 0;
+  display: block;
+  margin: auto 0 0;
   padding: 2px 13px;
   background-color: var(--gray);
   color: #666666;
-
 }
 
 .btn-container {
@@ -890,20 +903,46 @@ display:none;
   color: rgba(0, 0, 0, 0.3);
 }
 
-
 .stars-4 {
-  background-repeat: space no-repeat; width: 87px; min-height: 17px;
-  background-image: url("/img/star.svg"); align-self: flex-end;
+  position: relative;
+}
+
+.stars-4::after {
+  position: absolute;
+  content: unset;
+  right: 0;
+  top: 0;
+  background: url("/img/star.svg");
+  width: 88px;
+  background-repeat: space no-repeat;
 }
 
 .stars-3 {
-  background-repeat: space no-repeat; width: 65px; min-height: 17px;
-  background-image: url("/img/star.svg"); align-self: flex-end;
+  position: relative;
+}
+
+.stars-3::after {
+  position: absolute;
+  content: url("/img/star.svg");
+  right: 0;
+  top: 0;
+  background: url("/img/star.svg");
+  width: 64px;
+  background-repeat: space no-repeat;
 }
 
 .stars-2 {
-  background-repeat: space no-repeat; width: 40px; min-height: 17px;
-  background-image: url("/img/star.svg"); align-self: flex-end;
+  position: relative;
+}
+
+.stars-2::after {
+  position: absolute;
+  content: url("/img/star.svg");
+  right: 0;
+  top: 0;
+  background: url("/img/star.svg");
+  width: 40px;
+  background-repeat: space no-repeat;
 }
 
 .more-info-btn:hover {
