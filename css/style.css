@@ -543,14 +543,12 @@ svg {
 }
 
 .filter-item-chk + label::before {
-  content: "";
+  content: url("/img/checkbox-off.svg");
   position: absolute;
   left: -40px;
   top: 2px;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--white);
-  border-radius: 3px;
+  width: 20px;
+  height: 20px;
 }
 
 .filter-item-chk:checked + label::before {
@@ -564,6 +562,11 @@ svg {
   top: 2px;
   width: 20px;
   height: 20px;
+}
+
+.filter-item-chk:disabled + label::before,
+.filter-item-chk:checked:disabled + label::after {
+  opacity: 0.3;
 }
 
 .filter-item {
@@ -913,7 +916,8 @@ svg {
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 88px; height:17px;
+  width: 88px;
+  height: 17px;
   background-repeat: space no-repeat;
 }
 
@@ -927,7 +931,8 @@ svg {
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 64px;height:17px;
+  width: 64px;
+  height: 17px;
   background-repeat: space no-repeat;
 }
 
@@ -941,7 +946,8 @@ svg {
   right: 0;
   top: 0;
   background: url("/img/star.svg");
-  width: 40px;height:17px;
+  width: 40px;
+  height: 17px;
   background-repeat: space no-repeat;
 }
 
