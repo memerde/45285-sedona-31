@@ -342,6 +342,7 @@ svg {
 
   margin: 0 auto;
   padding-top: 55px;
+  position: relative;
 }
 
 .search h3 {
@@ -359,7 +360,7 @@ svg {
 }
 
 .popup-btn {
-  background-color: #766357;
+  background-color: var(--brown);
   font-size: 21px;
   width: 568px;
   padding: 30px 0 32px;
@@ -384,19 +385,22 @@ svg {
   background-color: var(--darkest-brown);
 }
 
-.modal {
-  display: none;
+/* .modal {
+  display: block;
   position: absolute;
   z-index: 2;
   top: 2170px;
   left: 732px;
-}
+} */
 
 .form-index {
   background-color: var(--white);
   padding: 55px;
   width: 568px;
   margin: 0 auto;
+  position: absolute;
+  z-index: 2;
+  top: 291px;
 }
 
 .form-index {
@@ -508,6 +512,15 @@ svg {
   padding: 16px 0;
   font-size: 21px;
   line-height: 26px;
+}
+
+.search-btn:hover {
+  background-color: var(--medium-blue);
+}
+
+.search-btn:active {
+  background-color: var(--dark-blue);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .svg-button {
@@ -1000,7 +1013,7 @@ svg {
 .footer {
   display: grid;
   z-index: 1;
-  opacity: 0.9;
+
   grid-template-columns: 1fr 1fr 1fr;
 
   padding-top: 20px;
@@ -1009,6 +1022,7 @@ svg {
 .index-footer {
   padding-top: 23px;
   padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-contacts {
@@ -1060,6 +1074,16 @@ svg {
   width: 150px;
 }
 
+.social-button {
+  font-weight: 700;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
 .social-item {
   background-color: var(--blue);
   width: 46px;
@@ -1071,21 +1095,11 @@ svg {
   padding: 0;
 }
 
-.social-button {
-  font-weight: 700;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-
 .social-item:hover {
   background-color: var(--medium-blue);
 }
 
-.social-svg:active {
+.social-item svg:active {
   opacity: 0.3;
 }
 
@@ -1096,16 +1110,18 @@ svg {
 .logo-svg path {
   fill: black;
 }
+
 .logo-svg:hover path {
   fill: var(--blue);
 }
+
 .logo-svg:active path {
   fill: var(--logo-gray);
 }
+
 .sort-type-list {
   display: flex;
   justify-content: flex-end;
-
   width: 95%;
 }
 
