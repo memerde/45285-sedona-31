@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="/favicon.ico?" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page-body">
@@ -183,7 +183,7 @@
         <form
         action="https://echo.htmlacademy.ru"
         method="post"
-        class="form-index"
+        class="form-index modal-show"
       >
         <p class="form-item">
           <label for="datein-id" class="datein">Дата заезда:</label>
@@ -191,7 +191,7 @@
             type="text"
             id="datein-id"
             name="datein"
-            value="24 апреля 2017"
+            value="24 апреля 2017" class="input-day-in"
           />
           <svg
             class="calendar"
@@ -509,9 +509,6 @@
       </div>
     </footer>
 
-    <!-- <section class="modal search-form">
-      <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-
-    </section> -->
+    <script src="/js/popup.js"></script>
   </body>
 </html>
