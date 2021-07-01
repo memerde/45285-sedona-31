@@ -10,7 +10,7 @@
     />
     <link rel="icon" href="/favicon.ico?" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
   <body class="page-body">
@@ -254,97 +254,92 @@
 
           <div class="form-container">
             <div class="form-adult">
+              <label for="adult-id"> Взрослые:</label>
+              <button type="button" class="adult-button-minus">
+                <span class="visually-hidden">Кнопка «Минус»</span>
+                <svg
+                  class="svg-ad-minus"
+                  width="12"
+                  height="3"
+                  viewBox="0 0 12 3"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="12" height="3" fill="#A9A9A9" />
+                </svg>
+              </button>
 
-              <label for="adult-id" >
-                Взрослые:</label>
-                <button type="button" class="adult-button-minus">
-                  <span class="visually-hidden">Кнопка «Минус»</span>
-                  <svg
-                    class="svg-ad-minus"
-                    width="12"
-                    height="3"
-                    viewBox="0 0 12 3"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="12" height="3" fill="#A9A9A9" />
-                  </svg>
-                </button>
-
-                <input
-                  type="text"
-                  minlength="1"
-                  maxlength="3"
-                  value="2"
-                  name="adult"
-                  id="adult-id"
-                  class="adult-input"
-                />
-                <button type="button" class="adult-button-plus">
-                  <span class="visually-hidden">Кнопка «Плюс»</span>
-                  <svg
-                    class="svg-ad-plus"
-                    width="11"
-                    height="11"
-                    viewBox="0 0 11 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                      fill="#A9A9A9"
-                    />
-                  </svg>
-                </button>
-
+              <input
+                type="text"
+                minlength="1"
+                maxlength="3"
+                value="2"
+                name="adult"
+                id="adult-id"
+                class="adult-input"
+              />
+              <button type="button" class="adult-button-plus">
+                <span class="visually-hidden">Кнопка «Плюс»</span>
+                <svg
+                  class="svg-ad-plus"
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                    fill="#A9A9A9"
+                  />
+                </svg>
+              </button>
             </div>
 
             <div class="form-child">
-
-              <label for="child-id" class="child-label"
-                >Дети:</label>
-                <button type="button" class="child-button-minus">
-                  <span class="visually-hidden">Кнопка Минус</span>
-                  <svg
-                    class="svg-ch-minus"
-                    width="12"
-                    height="3"
-                    viewBox="0 0 12 3"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect width="12" height="3" fill="#A9A9A9" />
-                  </svg>
-                </button>
-                <input
-                  type="text"
-                  minlength="1"
-                  maxlength="3"
-                  value="0"
-                  name="child"
-                  id="child-id"
-                  class="child-input" />
-                <button type="button" class="child-button-plus">
-                  <span class="visually-hidden">Кнопка «Плюс»</span>
-                  <svg
-                    class="svg-ch-plus"
-                    width="11"
-                    height="11"
-                    viewBox="0 0 11 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
-                      fill="#A9A9A9"
-                    />
-                  </svg></button
-              >
-
+              <label for="child-id" class="child-label">Дети:</label>
+              <button type="button" class="child-button-minus">
+                <span class="visually-hidden">Кнопка Минус</span>
+                <svg
+                  class="svg-ch-minus"
+                  width="12"
+                  height="3"
+                  viewBox="0 0 12 3"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="12" height="3" fill="#A9A9A9" />
+                </svg>
+              </button>
+              <input
+                type="text"
+                minlength="1"
+                maxlength="3"
+                value="0"
+                name="child"
+                id="child-id"
+                class="child-input"
+              />
+              <button type="button" class="child-button-plus">
+                <span class="visually-hidden">Кнопка «Плюс»</span>
+                <svg
+                  class="svg-ch-plus"
+                  width="11"
+                  height="11"
+                  viewBox="0 0 11 11"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                    fill="#A9A9A9"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
 

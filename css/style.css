@@ -475,7 +475,8 @@ svg {
   -ms-user-select: none;
   user-select: none;
   margin: 0;
-  padding: 0; position: relative;
+  padding: 0;
+  position: relative;
 }
 
 .calendar-btn {
