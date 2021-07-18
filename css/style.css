@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
+
 
 /* Variables */
 
@@ -1302,7 +1297,7 @@ img {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
-
+.form-cont {position: absolute; top:0; left:317px; }
 @-webkit-keyframes shake {
   0%,
   100% {
@@ -1369,6 +1364,13 @@ img {
     transform: translateY(-300px);
     opacity: 0;
   }
+
+  30% {
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1379,6 +1381,12 @@ img {
   0% {
     -webkit-transform: translateY(-300px);
     transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  30% {
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
     opacity: 0;
   }
 

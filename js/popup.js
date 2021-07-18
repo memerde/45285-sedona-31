@@ -4,13 +4,15 @@ const dayIn = document.querySelector(".input-day-in");
 const dayOut = document.querySelector(".input-day-out");
 const adult = document.querySelector(".adult-input");
 const child = document.querySelector(".child-input");
+const container = document.querySelector(".form-cont")
 
-formIndex.classList.add("modal-hide");
+container.classList.add("modal-hide");
 
 popBtn.addEventListener("click", function () {
-  formIndex.classList.toggle("modal-show");
-  formIndex.classList.toggle("modal-hide");
+  container.classList.toggle("modal-show");
   formIndex.classList.remove("modal-error");
+
+   
 });
 
 formIndex.addEventListener("submit", function (evt) {
